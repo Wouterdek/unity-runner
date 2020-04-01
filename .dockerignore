@@ -4,3 +4,4 @@
 # Files required for the action
 !*.sh
 !action.yml
+!*.patch
