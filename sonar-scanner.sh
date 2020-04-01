@@ -43,9 +43,6 @@ fi
 
 sh -c "$begin_cmd"
 
-if [ -n "$INPUT_BUILDCOMMAND" ]
-then
-    sh -c "/opt/Unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet build ${INPUT_SOLUTION}"
-fi
+sh -c "/opt/Unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet build ${INPUT_SOLUTION}"
 
 sh -c "$end_cmd"
