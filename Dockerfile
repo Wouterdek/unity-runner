@@ -9,6 +9,11 @@ LABEL "repository"="http://github.com/MirrorNG/unity-runner"
 LABEL "homepage"="http://github.com/MirrorNG/unity-runner"
 LABEL "maintainer"="Paul Pacheco <paulpach@gmail.com>"
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends default-jre && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* && \
+    apt-get autoremove -y 
+    
 # install sonar scanner
 RUN /opt/Unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet tool install dotnet-sonarscanner --tool-path . --version 4.7.1
 
