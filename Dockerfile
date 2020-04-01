@@ -19,6 +19,8 @@ COPY entrypoint.sh /entrypoint.sh
 COPY activate.sh /activate.sh
 COPY sonar-scanner.sh /sonar-scanner.sh
 
+ENV DOTNET_ROOT=/opt/Unity/Editor/Data/NetCore/Sdk-2.2.107/
+
 ADD request_activation.sh /request_activation.sh
 RUN chmod +x /entrypoint.sh
 RUN chmod +x /activate.sh
