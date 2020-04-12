@@ -26,6 +26,7 @@ if [[ -n "$UNITY_LICENSE" ]]; then
       -batchmode \
       -nographics \
       -logFile /dev/stdout \
+      -projectPath /tmp
       -quit \
       -manualLicenseFile $FILE_PATH
   # This is expected to always exit with code 1 (both success and failure).
