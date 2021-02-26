@@ -1,4 +1,4 @@
-FROM ubuntu-2020.1.13f1-windows-mono-0.9.0
+FROM unityci/editor:ubuntu-2020.1.13f1-windows-mono-0.9.0
 
 LABEL "com.github.actions.name"="Unity Runner"
 LABEL "com.github.actions.description"="Run unity any Unity project."
